@@ -1,0 +1,11 @@
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\bin\Debug\net8.0\Identity.Domain.Core.deps.json
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\bin\Debug\net8.0\Identity.Domain.Core.dll
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\bin\Debug\net8.0\Identity.Domain.Core.pdb
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.AssemblyInfoInputs.cache
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.AssemblyInfo.cs
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.csproj.CoreCompileInputs.cache
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.dll
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\refint\Identity.Domain.Core.dll
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.pdb
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\ref\Identity.Domain.Core.dll
