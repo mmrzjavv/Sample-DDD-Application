@@ -9,3 +9,6 @@ D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\ob
 D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\refint\Identity.Domain.Core.dll
 D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.pdb
 D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\ref\Identity.Domain.Core.dll
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\bin\Debug\net8.0\Identity.Domain.Core.runtimeconfig.json
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.csproj.AssemblyReference.cache
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Domain.Core\obj\Debug\net8.0\Identity.Domain.Core.genruntimeconfig.cache

@@ -11,11 +11,17 @@ public class UserImages : ValueObject<UserImages>
 
     protected override bool EqualsCore(UserImages other)
     {
-        throw new NotImplementedException();
+        if (other == null)
+            return false;
+
+        return FilePath == other.FilePath &&
+               FileName == other.FileName &&
+               Extension == other.Extension &&
+               Size == other.Size;
     }
 
     protected override int GetHashCodeCore()
     {
-        throw new NotImplementedException();
+        return HashCode.Combine(FilePath, FileName, Extension, Size);
     }
 }

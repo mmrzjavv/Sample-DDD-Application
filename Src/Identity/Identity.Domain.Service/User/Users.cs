@@ -2,21 +2,23 @@
 using System.Security.Principal;
 using Identity.Domain.Core.Bases.SeedWork;
 using Identity.Domain.Service.Role;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Identity.Domain.Service.User;
 
-public class Users : AggregateRoot<UserId>
+public class Users : AggregateRoot<Guid>
 {
     public string Name { get; set; } = string.Empty;
     public string Lastname { get; set; } = string.Empty;
     public string Mobile { get; set; } = string.Empty;
     public UserImages UserImage { get; set; }
 
-    public RoleId RoleId { get; set; }
-    public Role.RoleId Roles { get; set; } = null!;
+    public Guid RoleId { get; set; }
+    public Role.Roles Roles { get; set; } = null!;
 
 
-    private Users(UserId id, string name, string lastname, string mobile
+    private Users(Guid id, string name, string lastname, string mobile
         , string filePath, string fileName, string fileExtension, int fileSize)
     {
         //validation
@@ -40,28 +42,46 @@ public class Users : AggregateRoot<UserId>
     public static Users CreateUsers(string name, string lastname, string mobile
         , string filePath, string fileName, string fileExtension, int fileSize)
     {
-        var userId = new UserId(Guid.NewGuid());
+        var userId = Guid.NewGuid();
         return new Users(userId, name, lastname, mobile, filePath, fileName, fileExtension, fileSize);
     }
 
     public static Users UpdateUsers(Guid id, string name, string lastname, string mobile
         , string filePath, string fileName, string fileExtension, int fileSize)
     {
-        var userId = new UserId(id);
-        return new Users(userId, name, lastname, mobile, filePath, fileName, fileExtension, fileSize);
+        return new Users(id, name, lastname, mobile, filePath, fileName, fileExtension, fileSize);
     }
 
-    public static Users DeleteUser(UserId id)
+    public static Users DeleteUser(Guid id)
     {
         return new Users(id);
     }
 
-    private Users(UserId id)
+    private Users(Guid id)
     {
         Id = id;
     }
 
     private Users()
     {
+    }
+    
+    public class  UserConfiguration : IEntityTypeConfiguration<User.Users>
+    {
+        public void Configure(EntityTypeBuilder<Users> builder)
+        {
+            builder.Property(x => x.Id).IsRequired();
+            builder.HasOne(x => x.Roles)
+                .WithMany()  
+                .HasForeignKey(x => x.RoleId);
+            builder.OwnsOne(x => x.UserImage, u =>
+            {
+                u.Property(p => p.FilePath).HasMaxLength(500);
+                u.Property(p => p.FileName).HasMaxLength(250);
+                u.Property(p => p.Extension).HasMaxLength(10);
+                u.Property(p => p.Size);
+            });
+            
+        }
     }
 }
