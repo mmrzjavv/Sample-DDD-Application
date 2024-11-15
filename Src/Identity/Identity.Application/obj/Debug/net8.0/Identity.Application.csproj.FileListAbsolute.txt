@@ -1,0 +1,11 @@
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\bin\Debug\net8.0\Identity.Application.deps.json
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\bin\Debug\net8.0\Identity.Application.dll
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\bin\Debug\net8.0\Identity.Application.pdb
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.AssemblyInfoInputs.cache
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.AssemblyInfo.cs
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.csproj.CoreCompileInputs.cache
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.dll
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\obj\Debug\net8.0\refint\Identity.Application.dll
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\obj\Debug\net8.0\Identity.Application.pdb
+D:\work\Self\Microservices\Microservice1114\Src\Identity\Identity.Application\obj\Debug\net8.0\ref\Identity.Application.dll
